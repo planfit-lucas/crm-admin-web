@@ -493,8 +493,47 @@
     </div>
   </div>
 
-  <!-- 13: CRM URL -->
+  <!-- 13: 내부 테스트 트러블슈팅 -->
   <div class="s s-light" data-i="12">
+    <h2>내부 테스트 발송이 안 올 때</h2>
+    <p class="sub">푸시 또는 이메일이 수신되지 않는다면 아래 항목을 확인하세요</p>
+    <div class="g2" style="gap:24px;">
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="font-size:14px;font-weight:700;color:var(--primary);margin-bottom:2px;">🔍 확인 체크리스트</div>
+        <div class="step"><div class="step-n" style="background:var(--danger);color:#fff;">1</div><div><div style="font-weight:700;font-size:13px;margin-bottom:2px;">개발자 메뉴가 보이는지 확인</div><div style="font-size:11px;color:var(--muted);line-height:1.5;">내부 테스트 발송 대상은 <b>개발자 메뉴가 활성화된 계정</b>만 해당됩니다.<br>앱에서 개발자 메뉴가 보이지 않는다면 테스트 대상이 아닙니다.</div></div></div>
+        <div class="step"><div class="step-n" style="background:var(--danger);color:#fff;">2</div><div><div style="font-weight:700;font-size:13px;margin-bottom:2px;">이메일 도메인 확인</div><div style="font-size:11px;color:var(--muted);line-height:1.5;">이메일 채널의 경우 <b>@planfit.ai</b> 로 끝나는 계정에만 발송됩니다.<br>개인 이메일(gmail 등)로는 내부 테스트 수신 불가</div></div></div>
+        <div class="step"><div class="step-n" style="background:var(--warn);color:#fff;">3</div><div><div style="font-weight:700;font-size:13px;margin-bottom:2px;">내부 테스트 발송 체크 확인</div><div style="font-size:11px;color:var(--muted);line-height:1.5;">캠페인 설정에서 '내부 테스트 발송' 체크박스가<br>활성화되어 있는지 확인</div></div></div>
+        <div class="step"><div class="step-n" style="background:var(--warn);color:#fff;">4</div><div><div style="font-weight:700;font-size:13px;margin-bottom:2px;">푸시 알림 권한 확인</div><div style="font-size:11px;color:var(--muted);line-height:1.5;">기기 설정에서 Planfit 앱의 푸시 알림이<br>허용되어 있는지 확인</div></div></div>
+      </div>
+      <div class="mock" style="padding:20px;">
+        <div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:16px;">필수 조건 요약</div>
+        <div style="background:#FEF2F2;border:1px solid #FECACA;border-radius:8px;padding:14px 16px;margin-bottom:10px;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+            <span style="font-size:14px;">📱</span>
+            <span style="font-size:12px;font-weight:700;color:var(--danger);">푸시 수신 조건</span>
+          </div>
+          <div style="font-size:11px;color:var(--text);line-height:1.7;padding-left:22px;">해당 계정에 <b>개발자 메뉴</b>가 보여야 합니다</div>
+        </div>
+        <div style="background:#FEF2F2;border:1px solid #FECACA;border-radius:8px;padding:14px 16px;margin-bottom:14px;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+            <span style="font-size:14px;">📧</span>
+            <span style="font-size:12px;font-weight:700;color:var(--danger);">이메일 수신 조건</span>
+          </div>
+          <div style="font-size:11px;color:var(--text);line-height:1.7;padding-left:22px;">계정 이메일이 <b>@planfit.ai</b> 로 끝나야 합니다</div>
+        </div>
+        <div style="border-top:1px dashed var(--border);padding-top:12px;">
+          <div style="font-size:11px;color:var(--muted);line-height:1.6;">
+            <div style="margin-bottom:4px;">✅ 개발자 메뉴 보임 → 푸시 OK</div>
+            <div style="margin-bottom:4px;">✅ @planfit.ai 이메일 → 이메일 OK</div>
+            <div>❌ 위 조건 미충족 → 수신 불가</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 14: CRM URL -->
+  <div class="s s-light" data-i="13">
     <div style="text-align:center;margin:auto;">
       <div style="font-size:48px;margin-bottom:16px;">🔗</div>
       <h2 style="margin-bottom:10px;">CRM Admin 접속</h2>
@@ -504,8 +543,8 @@
     </div>
   </div>
 
-  <!-- 14: Q&A -->
-  <div class="s s-dark" data-i="13">
+  <!-- 15: Q&A -->
+  <div class="s s-dark" data-i="14">
     <div class="bar-top"></div>
     <div style="text-align:center;">
       <div style="font-size:52px;margin-bottom:16px;">💬</div>
@@ -519,7 +558,7 @@
     <button id="pb" onclick="go(-1)" disabled>◀</button>
     <div class="dots" id="dots"></div>
     <button id="nb" onclick="go(1)">▶</button>
-    <span class="cnt" id="cnt">1 / 14</span>
+    <span class="cnt" id="cnt">1 / 15</span>
   </div>
 </div>
 
