@@ -284,51 +284,24 @@
         <div class="step"><div class="step-n">2</div><div><div style="font-weight:700;font-size:13px;margin-bottom:2px;">실험 ID 입력</div><div style="font-size:11px;color:var(--muted);line-height:1.5;">고유 식별자 (영문, 숫자, 언더스코어)<br>예: onboarding_test, retention_v2</div></div></div>
         <div class="step"><div class="step-n">3</div><div><div style="font-weight:700;font-size:13px;margin-bottom:2px;">변형 & 트래픽 비율</div><div style="font-size:11px;color:var(--muted);line-height:1.5;">+ 변형 추가로 Variant 추가, 합계 = 100%</div></div></div>
       </div>
-      <div style="display:flex;flex-direction:column;gap:14px;">
-        <div class="mock" style="padding:18px;">
-          <div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:12px;">실험 설정</div>
-          <div class="mock-label">실험 ID *</div>
-          <div class="mock-input focus">onboarding_test</div>
-          <div style="font-size:9px;color:var(--accent);margin-top:-6px;margin-bottom:10px;">고유한 식별자 (영문, 숫자, 언더스코어만 사용). 필수 입력.</div>
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
-            <div style="font-size:11px;font-weight:700;">변형 (3개) 및 트래픽 비율</div>
-            <span class="mock-btn mock-btn-primary" style="font-size:9px;padding:3px 10px;">+ 변형 추가</span>
-          </div>
-          <div style="display:flex;gap:16px;align-items:center;margin-bottom:6px;">
-            <div><div style="font-size:9px;">변형 A <span class="mock-x">✕</span></div><div style="display:flex;align-items:center;gap:2px;margin-top:2px;"><div class="mock-pct-input">33</div><span style="font-size:10px;color:var(--muted);">%</span></div></div>
-            <div><div style="font-size:9px;">변형 B <span class="mock-x">✕</span></div><div style="display:flex;align-items:center;gap:2px;margin-top:2px;"><div class="mock-pct-input">34</div><span style="font-size:10px;color:var(--muted);">%</span></div></div>
-            <div><div style="font-size:9px;">변형 C <span class="mock-x">✕</span></div><div style="display:flex;align-items:center;gap:2px;margin-top:2px;"><div class="mock-pct-input">33</div><span style="font-size:10px;color:var(--muted);">%</span></div></div>
-          </div>
-          <div style="font-size:10px;font-weight:600;color:var(--success);margin-bottom:8px;">합계: 100%</div>
-          <div style="border-top:1px dashed var(--border);padding-top:6px;">
-            <div style="font-size:9px;color:var(--muted);margin-bottom:3px;">⚠️ 합계 ≠ 100% 일 때:</div>
-            <div style="font-size:10px;font-weight:600;color:var(--danger);">합계: 99% — 합계가 100%가 되도록 조정하세요</div>
-          </div>
+      <div class="mock" style="padding:22px;">
+        <div style="font-size:15px;font-weight:700;color:var(--primary);margin-bottom:16px;">실험 설정</div>
+        <div class="mock-label" style="font-size:12px;">실험 ID *</div>
+        <div class="mock-input focus" style="font-size:13px;padding:10px 12px;">onboarding_test</div>
+        <div style="font-size:10px;color:var(--accent);margin-top:-6px;margin-bottom:14px;">고유한 식별자 (영문, 숫자, 언더스코어만 사용). 필수 입력.</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+          <div style="font-size:13px;font-weight:700;">변형 (3개) 및 트래픽 비율</div>
+          <span class="mock-btn mock-btn-primary" style="font-size:10px;padding:5px 14px;">+ 변형 추가</span>
         </div>
-        <!-- 발송 콘텐츠 mini preview -->
-        <div class="mock" style="padding:14px 18px;">
-          <div style="font-size:12px;font-weight:700;color:var(--primary);margin-bottom:10px;">발송 콘텐츠</div>
-          <div style="background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:8px 12px;margin-bottom:10px;font-size:10px;color:var(--muted);cursor:pointer;">▶ Markdown 예시 포맷</div>
-          <div style="display:flex;gap:12px;">
-            <div style="flex:1;border:1px solid var(--border);border-radius:8px;padding:10px;">
-              <div style="font-size:12px;font-weight:700;margin-bottom:6px;">한국</div>
-              <div style="font-size:9px;color:var(--muted);margin-bottom:3px;">제목</div>
-              <div class="mock-input" style="font-size:10px;padding:5px 8px;margin-bottom:6px;">한국 제목</div>
-              <div style="font-size:9px;color:var(--muted);margin-bottom:3px;">내용 · Markdown 지원 (HTML 자동 생성)</div>
-              <div class="mock-input" style="font-size:10px;padding:5px 8px;min-height:28px;margin-bottom:6px;">한국 내용 (Markdown 사용 가능)</div>
-              <div style="font-size:9px;color:var(--muted);margin-bottom:3px;">미리보기</div>
-              <div style="background:#F8FAFC;border:1px solid var(--border);border-radius:6px;padding:6px 8px;font-size:9px;color:var(--muted);font-style:italic;">내용을 입력하면 여기에 표시됩니다.</div>
-            </div>
-            <div style="flex:1;border:1px solid var(--border);border-radius:8px;padding:10px;">
-              <div style="font-size:12px;font-weight:700;margin-bottom:6px;">미국</div>
-              <div style="font-size:9px;color:var(--muted);margin-bottom:3px;">제목</div>
-              <div class="mock-input" style="font-size:10px;padding:5px 8px;margin-bottom:6px;">미국 제목</div>
-              <div style="font-size:9px;color:var(--muted);margin-bottom:3px;">내용 · Markdown 지원 (HTML 자동 생성)</div>
-              <div class="mock-input" style="font-size:10px;padding:5px 8px;min-height:28px;margin-bottom:6px;">미국 내용 (Markdown 사용 가능)</div>
-              <div style="font-size:9px;color:var(--muted);margin-bottom:3px;">미리보기</div>
-              <div style="background:#F8FAFC;border:1px solid var(--border);border-radius:6px;padding:6px 8px;font-size:9px;color:var(--muted);font-style:italic;">내용을 입력하면 여기에 표시됩니다.</div>
-            </div>
-          </div>
+        <div style="display:flex;gap:20px;align-items:center;margin-bottom:10px;">
+          <div><div style="font-size:11px;margin-bottom:4px;">변형 A <span class="mock-x">✕</span></div><div style="display:flex;align-items:center;gap:3px;"><div class="mock-pct-input" style="width:44px;font-size:13px;padding:6px 8px;">33</div><span style="font-size:12px;color:var(--muted);">%</span></div></div>
+          <div><div style="font-size:11px;margin-bottom:4px;">변형 B <span class="mock-x">✕</span></div><div style="display:flex;align-items:center;gap:3px;"><div class="mock-pct-input" style="width:44px;font-size:13px;padding:6px 8px;">34</div><span style="font-size:12px;color:var(--muted);">%</span></div></div>
+          <div><div style="font-size:11px;margin-bottom:4px;">변형 C <span class="mock-x">✕</span></div><div style="display:flex;align-items:center;gap:3px;"><div class="mock-pct-input" style="width:44px;font-size:13px;padding:6px 8px;">33</div><span style="font-size:12px;color:var(--muted);">%</span></div></div>
+        </div>
+        <div style="font-size:12px;font-weight:600;color:var(--success);margin-bottom:12px;">합계: 100%</div>
+        <div style="border-top:1px dashed var(--border);padding-top:10px;">
+          <div style="font-size:10px;color:var(--muted);margin-bottom:4px;">⚠️ 합계 ≠ 100% 일 때:</div>
+          <div style="font-size:12px;font-weight:600;color:var(--danger);">합계: 99% — 합계가 100%가 되도록 조정하세요</div>
         </div>
       </div>
     </div>
